@@ -21,10 +21,6 @@
     "jsx": "react"
   },
   "include": [
-    "src", "x.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "build"
+    "src"
   ]
 }
