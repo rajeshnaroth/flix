@@ -7,7 +7,7 @@ export interface IReducer {
   result: any;
 }
 
-export type TransformerFrunction = (input: object | any[]) => object | any[];
+export type TransformerFunction = (input: object | any[]) => object | any[];
 export type LoaderFunction = () => Promise<any>;
 
 export interface IAsyncResult extends IReducer {
@@ -101,7 +101,7 @@ const asyncStateReducer = (
 // useAsync is a utility that can simplify running async calls
 // returns IAsyncResult
 
-export const useAsync = (xformer?: TransformerFrunction): IAsyncResult => {
+export const useAsync = (xformer?: TransformerFunction): IAsyncResult => {
   const [
     { isBusy, isError, isStale, errorMessage, result },
     dispatch,

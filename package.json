@@ -5,7 +5,7 @@
     "packages/core"
   ],
   "scripts": {
-    "start": "yarn workspace @totalrepo/core start"
+    "start": "yarn workspace @totalrepo/app start"
   },
   "husky": {
     "hooks": {

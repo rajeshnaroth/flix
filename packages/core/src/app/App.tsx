@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">Core - repo</header>
+      <header className="app-header">
+        Core repo. Instead of running yarn start, try yarn storybook.
+      </header>
     </div>
   );
-}
-
-export default App;
+};
